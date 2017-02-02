@@ -65,7 +65,7 @@
 			});
 			
 			// Load GeoJSON.
-			var promise = $.getJSON("completo.geojson"); //same as map.data.loadGeoJson();
+			var promise = $.getJSON("https://igor-dg.github.io/edis/completo.geojson"); //same as map.data.loadGeoJson();
 			promise.then(function(data){
 				cachedGeoJson = data; //save the geojson in case we want to update its values
 				map.data.addGeoJson(cachedGeoJson,{idPropertyName:"id"});  
